@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positions Practice</title>
+</head>
+<body style="
+    height: 3000px;
+    padding-top: 60px;
+    padding-left: 80px;
+">
+    <div style="
+        background-color: black;
+        color: white;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        left: 0px;
+        height: 50px;
+    ">
+        header
+    </div>
+    
+    <!-- SideBar -->
+    <div style="
+        background-color: green;
+        color: white;
+        position: fixed;
+        left: 0px;
+        bottom: 0px;
+        top: 50px;
+        
+        width: 72px;
+    ">
+        SideBar
+    </div>
+    <!-- Think? why we wrote width: 72px why not right 72px ?? Becoz on writing width: 72px it will change on resizing the page i.e it will remain fixed -->
+    
+    <div style="
+        background-color: lightblue;
+        height: 200px;
+        width: 200px;
+        position: static;
+        margin-top: 60px;
+    ">
+        div 1
+    </div>
+    <div style="
+        background-color: lightpink;
+        height: 200px;
+        width: 200px;
+    ">
+        div 2
+    </div>
+</body>
+</html>

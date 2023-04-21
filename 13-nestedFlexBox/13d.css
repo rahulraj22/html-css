@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Lacquer&family=Lobster&family=Montserrat:wght@300;400;500;700&family=Open+Sans:ital,wght@0,400;0,700;1,300&family=Poppins:wght@100;200;300;400;700&family=Roboto:wght@400;500;700&family=Yeon+Sung&display=swap');
+
+div{
+    font-family: Roboto, Arial;
+}
+.gmail-design{
+    width: 420px;
+    /* Keeping horizontal and vertical shadow 0 will affect all the edges shadow(blur effect of 5px) */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    
+    padding-bottom: 30px;
+    padding-top: 10px;
+    padding-left: 20px;
+    
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.inboxes{
+    color: gray;
+    margin-bottom: 24px;
+}
+.email-card{
+    display: flex;
+}
+.image{
+    margin-right: 12px;
+}
+img{
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    object-fit: cover;
+}
+.content-subject{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.subject{
+    font-weight: bold;
+    font-size: 18px;
+}
+.content-topic{
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 2px;
+}
+.content-desc, .time{
+    color: gray;
+}

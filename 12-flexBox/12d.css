@@ -1,0 +1,11 @@
+.items{
+    display: flex;
+    border: 1px;
+    border-style: solid;
+    border-color: grey;
+    height: 50px;
+    justify-content: space-between;
+}
+p{
+    background-color: lightpink;
+}

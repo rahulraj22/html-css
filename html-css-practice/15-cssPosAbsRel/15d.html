@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>15d Exercise Solution</title>
+    <style>
+        .cross-button{
+            background-color: black;
+            color: white;
+            
+            position: absolute;
+            top: -18px;
+            left: -18px;
+            
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            
+            /* after doing this, we see that text is not at center */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            
+            cursor: pointer;
+        }
+        body{
+            height: 3000px;
+        }
+        
+        .card{
+            background-color: gray;
+            height: 180px;
+            width: 320px;
+            
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            
+        }
+        .time-stamp{
+            background-color: black;
+            color: white;
+            
+            position: absolute;
+            bottom: 8px;
+            right: 8px;
+            
+            padding-top: 4px;
+            padding-bottom: 4px;
+            padding-left: 8px;
+            padding-right: 8px;
+            border-radius: 3px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        
+        
+        <div class="cross-button">
+            X
+        </div>
+        <div class="time-stamp">
+            0:29
+        </div>
+    </div>
+</body>
+</html>

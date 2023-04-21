@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>13g Exercise Solution</title>
+    
+    <style>
+        /* 9. change font family */
+        div{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /* 1. resize profile-picture */
+        .profile-picture{
+            height: 60px;
+            width: 60px;
+            border-radius: 30px;
+            object-fit: cover;
+        }
+        /* 2. change display of user class */
+        .user{
+            display: flex;
+            margin-bottom: 5px;
+        }
+        /* 3. change the display property for conatiner, to bring image and userdetails side by side */
+        .container{
+            display: flex;
+            
+            /* 6. Give some width */
+            width: 420px;
+            
+            /* 8. Give some margin at top and left */
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        /* 4. design username and userhandle */
+        .username{
+            font-weight: bold;
+            /* 5. give margin left to seperate content */
+            margin-right: 6px;
+        }
+        .userhandle{
+            color: rgb(60, 60, 60);
+        }
+        /* 7. change display in video-preview class */
+        .video-preview{
+            display: flex;
+            
+            align-items: center;
+            
+            /* 12. style the video-preview border and so on... */
+            border-width: 1px;
+            border-style: solid;
+            border-color: rgb(200, 200, 200);
+            border-radius: 14px;
+            overflow: hidden;  /* 14. this will remove/hidden any overflow from the div */
+            
+            cursor: pointer;
+        }
+        .thumbnail-col{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(229, 229, 229);
+            margin-right: 10px;
+        }
+        /* 10. give some margin to image class div */
+        .image{
+            margin-right: 10px;
+        }
+        .tweet{
+            flex: 1;
+        }
+        /* 11. margin-bottom at div class post */
+        .post{
+            margin-bottom: 10px;
+            line-height: 20px;
+        }
+        .video-link{
+            color: rgb(60, 60, 60);
+            margin-bottom: 3px;
+        }
+        
+        /* 13. design video-info-col */
+        .video-info-col{
+            flex: 1;
+        }
+        .video-title{
+            line-height: 22px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image">
+            <img class="profile-picture" src="https://shorturl.at/ckpU9" alt="rahulraj22">
+        </div>
+        <div class="tweet">
+            <div class="user">
+                <div class="username">Rahul Raj</div>
+                <div class="userhandle">@RahulRajsjs</div>
+            </div>
+            <div class="post">
+                What is backend web development? A complete overview. New video is up!
+            </div>
+            <a href="https://www.youtube.com/@rahulrajsjs22" style="text-decoration: none; color: black;" target="_blank">
+                <div class="video-preview">
+                    <div class="thumbnail-col">
+                        
+                    </div>
+                    <div class="video-info-col">
+                        <div class="video-link">youtube.com</div>
+                        <div class="video-title">
+                            Backend web development - a complete overview (2023)
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

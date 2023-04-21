@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube.com Clone</title>
+    <style>
+        .thumbnail {
+            width: 300px;
+            display: block;
+        }
+
+        .search-bar {
+            display: block;
+        }
+
+        .video-title {
+            width: 300px;
+        }
+
+        /* .video-author, .video-stats{
+            display: inline-block;
+        } */
+
+        /* The Div Element */
+        .video-preview {
+            width: 300px;
+            /* Why is the need of changing its display property, even after giving width to 300px, because div being the block element is forced to take up the whole line */
+            display: inline-block;
+            vertical-align: top;  /* this will align the div's along the top */
+            margin-right: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <input class="search-bar" type="text" placeholder="Search">
+
+    <!-- The Div element -->
+    <div class="video-preview">
+        <img class="thumbnail" src="../7-Project-Begins/thumbnails/thumbnail-1.webp" alt="">
+
+        <p class="video-title">
+            Talking Tech and AI with Google CEO Sundar Pichai!
+        </p>
+        <p class="video-author">
+            Marques Brownlee
+        </p>
+        <p class="video-stats">
+            3.4M views &#183; 6 months ago
+        </p>
+    </div>
+    <div class="video-preview">
+        <img class="thumbnail" src="../7-Project-Begins/thumbnails/thumbnail-2.webp" alt="">
+
+        <p class="video-title">      
+            Try Not To Laugh Challenge #9
+        </p>
+        <p class="video-author">
+            Markiplier
+        </p>
+        <p class="video-stats">
+            19M views &#183; 4 years ago
+        </p>
+    </div>
+</body>
+
+</html>

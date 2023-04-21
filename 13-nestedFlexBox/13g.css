@@ -1,0 +1,81 @@
+div{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* First we will align image and its content(i.e text and link) in one line */
+.tweet{
+    display: flex;
+    flex-direction: row;
+    width: 420px;
+    
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+
+.profile-picture-column{
+    margin-right: 10px;
+}
+
+.profile-picture{
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    object-fit: cover;
+}
+
+.tweet-column{
+    flex: 1;
+}
+
+.tweet-header{
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.tweet-author{
+    font-weight: bold;
+    margin-right: 8px;
+}
+.tweet-author-handle{
+    color: gray;
+}
+
+.tweet-content{
+    margin-bottom: 15px;
+    line-height: 20px;
+}
+
+.video-preview{
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    
+    /* for border */
+    border-width: 1px;
+    border-style: solid;
+    border-color: gray;
+    
+    border-radius: 15px;
+    
+    /* This will remove the overflowing content from this box i.e video-preview */
+    overflow: hidden;
+}
+.thumbnail-column{
+    /* border: 2px solid black; */
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+    margin-right: 10px;
+}
+
+.video-info-column{
+    flex: 1;
+}
+.video-website{
+    color: gray;
+    margin-bottom: 3px;
+}
+.video-title{
+    line-height: 22px;
+}

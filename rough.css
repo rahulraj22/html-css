@@ -1,0 +1,212 @@
+.header{
+    /* border: 1px solid black; */
+    height: 55px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+   /*  border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: gray; */
+}
+
+.left-section{
+    /* background-color: lightblue; */
+    /* width: 150px; */
+    display: flex;
+    align-items: center;
+}
+
+.hamburger-menu{
+    height: 24px;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+.youtube-logo{
+    height: 20px;
+}
+
+.middle-section{
+    /* background-color: lightpink; */
+    flex: 1;
+    margin-left: 70px;
+    margin-right: 35px;
+    max-width: 500px;  /* so this says that: width can be less than 300px but as soon as it grows over 300px then it will limits it to 300px */
+    
+    display: flex;
+    align-items: center;
+}
+
+.search-bar{
+    flex: 1;
+    width: 0;  /* to remove the default width of the input field */
+    height: 36px;
+    padding-left: 10px;
+    font-size: 16px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(189, 189, 189);
+    border-radius: 2px;
+    
+    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+}
+
+.search-bar::placeholder{
+    font-family: Roboto, Arial;
+    font-size: 16px;
+}
+
+.search-button{
+    height: 40px;
+    width: 66px;
+    
+    background-color: rgb(241, 241, 241);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(189, 189, 189);
+    
+    margin-left: -1px;   /* time -> 4:33:10 */
+    
+    margin-right: 10px;
+    
+    /* position: relative; */
+    
+}
+
+.search-button, 
+.voice-search-button,
+.upload-icon-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.search-button .tooltip,
+.voice-search-button .tooltip,
+.upload-icon-container .tooltip{
+    font-family: Roboto, Arial;
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-right: 8px;
+    padding-left: 8px;
+    
+    border-radius: 2px;
+    font-size: 12px;
+    
+    bottom: -30px;
+    opacity: 0;
+    
+    transition: opacity 0.15s;
+    
+    /* to disable hover on this tooltip */
+    pointer-events: none;
+    
+    white-space: nowrap;
+}
+.search-button:hover .tooltip,
+.voice-search-button:hover .tooltip,
+.upload-icon-container:hover .tooltip{
+    opacity: 1;
+}
+
+.search-icon{
+    height: 25px;
+    /* margin-top: 4px; */
+}
+
+.voice-search-button{
+    height: 40px;
+    width: 40px;
+    
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(246, 246, 246);
+}
+
+.voice-search-icon{
+    height: 24px;
+    /* margin-top: 4px; */
+}
+
+
+.right-section{
+    /* background-color: lightblue; */
+    width: 180px;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    /* 0 value implies, this will not shrink */
+    flex-shrink: 0;  /* time: 4:43:10 | This prevent shrinking of the flexible box i.e here a div with class named "right-section" */
+}
+
+.upload-icon{
+    height: 24px;
+    
+}
+
+.youtube-apps-icon{
+    height: 24px;
+}
+.notifications-icon{
+    height: 24px;
+}
+
+.current-user-picture{
+    height: 32px;
+    border-radius: 16px;
+}
+
+
+/* 16. Finish the project | About sidebar begins from here */
+.sidebar{
+    position: fixed;
+    top: 55px;
+    bottom: 0;
+    left: 0;
+    width: 72px;
+    background-color: white;
+    
+    z-index: 200;
+    
+    padding-top: 5px;
+}
+
+.sidebar-link{
+    
+    /* Since, we want our svg images to be in center */
+    display: flex;
+    justify-content: center; /* horizontal centering */
+    align-items: center;  /* vertical centering */
+    flex-direction: column;
+    
+    /* flex-direction: column; => displays elements vertically */
+    /* flex-direction: row; => displays elements horizontally */
+    
+    height: 74px;
+    
+    /* margin-bottom: 1px; */
+    
+    cursor: pointer;
+}
+
+.sidebar-link:hover{
+    background-color: rgb(236, 236, 236);
+}
+
+.sidebar-link img{
+    height: 24px;
+    margin-bottom: 4px;
+}
+
+.sidebar-link  div{
+    font-family: Roboto, Arial;
+    font-size: 10px;
+    
+}

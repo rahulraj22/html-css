@@ -1,0 +1,93 @@
+input {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(200, 200, 200);
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 16px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+.email {
+    display: block;
+    width: 300px;
+}
+
+.firstName {
+    width: 131.4px;
+}
+
+.secondName {
+    width: 131.4px;
+}
+
+.signup-button {
+    background-color: rgb(47, 127, 231);
+    
+    color: white;
+    border: none;
+    width: 332px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+/* Other way todo the same */
+/* this is important, here I have changed only email input to be in new line, for that I have changed its display property from inline-block to block display */
+/* 
+.email{
+    display: block;  
+    margin-top: 12px;
+    margin-bottom: 12px;
+
+
+    width: 267px;
+    
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 12px;
+}
+
+.firstName, .secondName{
+    width: 120px;
+    
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 12px;
+    
+}
+
+.firstName, .secondName, .email{
+    border-radius: 6px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.signup-button{
+    width: 290px;
+    
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 12px;
+    
+    border-radius: 6px;
+    border: none;
+    
+    font-weight: bold;
+    color: white;
+    
+    background-color: #378FE9;
+    
+    cursor: pointer;
+}
+*/

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube.com Clone</title>
+    <style>
+        .thumbnail{
+            width: 300px;
+            height: 300px;
+            /* object-fit: cover; */
+            
+            /* object-fit: contain; => The image keeps its aspect ratio, but is "resized" to fit within the given dimension.
+               object-fit: cover; => The image keeps its aspect ratio and fills the given dimension.
+             */
+            object-fit: contain;
+            /* object-position: right; */  /* shifts the image to right inside the boundary of width 300px and height 300px */
+            /* object-position: top; */   /*  similarly, this will shifts the image to top */
+            /* Similarly, we can move it to bottom */
+            object-position: bottom;  /* read: https://developer.mozilla.org/en-US/docs/Web/CSS/object-position */
+            border-width: 2px;
+            border-style: solid;
+            border-color: red;
+        }
+        .search-bar{
+            font-size: 20px;
+            margin-left: 12px;
+        }
+    </style>
+</head>
+<body>
+    <img class="thumbnail" src="../7-Project-Begins/thumbnails/thumbnail-1.webp" alt="">
+    <input class = "search-bar" type="text" placeholder="Search">
+    <!-- <input type="checkbox"> -->
+    <!-- 
+        Depending on the type(attribute) we have different things, for eg:
+        type = "text" => that input will take as text from user
+        type = "checkbox" => input will take as checkbox from the user
+        Similarly others.
+     -->
+</body>
+</html>

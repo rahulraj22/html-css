@@ -1,0 +1,94 @@
+<style>
+    .subscribe-button{
+        background-color: rgb(204, 0, 0);  /* this rgb value obtained using the dev tool: ctrl + shift + i */
+        color: white;
+        border: none;
+        /* height: 36px;
+        width: 108px; */
+        /* replace the above 2 line with box model : Because the content is overflowing fromt he button for the constraint height and width */
+        
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 16px;
+        padding-right: 16px;
+        border-radius: 2px;
+        cursor: pointer;
+        margin-right: 8px;
+        vertical-align: top;  /* align this button to top w.r.t to other button or html element */
+        transition: opacity 0.15s;
+    }
+    .subscribe-button:hover{
+        opacity: 0.8;
+    }
+
+
+    .join-button{
+        background-color: white;
+        border-color: rgb(41, 118, 211);
+        border-style: solid;  /* on giving solid, border color get uniformly distributed whichever color we have given else we see changes on commenting this code */
+        border-width: 1px;
+        color: rgb(41, 118, 211);
+        /* this was restricting our buttom to certain height and width. However without this our button will auto. adjust its height and width with given text */
+        /* height: 36px;
+        width: 62px; */
+        border-radius: 2px;
+        cursor: pointer;
+        
+        padding-top: 9px;
+        padding-bottom: 9px;
+        padding-left: 16px;
+        padding-right: 16px;
+
+        transition: background-color 0.15s, color 0.15s;
+    }
+    .join-button:hover{
+        background-color: rgb(41, 118, 211);
+        color: white;
+    }
+    .join-button:active{
+        opacity: 0.8;
+    }
+
+
+    .tweet-button{
+        background-color: rgb(29, 155, 242);
+        color: white;
+        border: none;
+        /* height: 36px;
+        width: 74px; */
+        /* Box Model */
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 16px;
+        padding-right: 16px;
+        /* border-radius: 2px; */
+        border-radius: 18px;
+        font-weight: bold;
+        font-size: 15px;
+        cursor: pointer;
+        margin-left: 8px;
+        vertical-align: top;
+
+        transition: box-shadow 0.15s;
+    }
+    .tweet-button:hover{
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);  /* 5px right shadow, 5px bottom shadow and 10px blur(in right and bottom part of the button) and its opacity is 0.15 */
+    }
+</style>
+
+<button class="subscribe-button">
+    SUBSCRIBE
+</button>
+
+<button class="join-button">
+    JOIN
+</button>
+
+<button class="tweet-button">
+    Tweet
+</button>
+
+<!-- 
+    buttons by default have 6px padding in left and right, 1px padding in top and bottom
+    
+ -->

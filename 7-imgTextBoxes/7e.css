@@ -1,0 +1,27 @@
+.rounded{
+    /* to extend the size of box(where input is given, so that placeholder is visible */
+    width: 480px;
+    
+    /* lets increase the font: default font size is set to 14px */
+    font-size: 16px;
+    
+    /* Lets set the paddings */
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+    /* Lets remove border */
+    border: none;
+    
+    /* Lets give shadow effect at bottom only with blur effect */
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2); 
+    /*
+    0px => shadow at right
+    5px => shadow at vertical(creatig slight drop shadow effect)
+    next 5px => blur effect of 5px
+    rgba() has 4 arguments with 1st is R, 2nd is G, 3rd is B i.e Blue and 4th value of alpha(basically the strangth of darkness) 
+    */
+    
+    border-radius: 30px;
+}

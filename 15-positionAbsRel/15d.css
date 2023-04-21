@@ -1,0 +1,51 @@
+body{
+    height: 3000px;
+}
+.gray-backgrd{
+    background-color: gray;
+    width: 400px;
+    height: 200px;
+    
+    position: fixed;  /* This will fix the element on the browser window. But when we put position: relative; then it fix the element on the page(i.e on scrolling element will also move) */
+    top: 20px;
+    left: 20px;
+    
+}
+
+.close-button{
+    background-color: black;
+    color: white;
+    
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    
+    cursor: pointer;
+}
+.time{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    
+    background-color: black;
+    color: white;
+    
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+}

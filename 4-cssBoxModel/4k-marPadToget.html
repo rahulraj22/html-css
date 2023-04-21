@@ -1,0 +1,39 @@
+<!-- 3D Click -->
+<style>
+    .strech-hz{
+        background-color: green;
+        color: white;
+        border: none;
+        font-size: 18px;
+        /* Box Model | Padding */
+        padding-top: 10px;
+        padding-bottom: 10px;
+        
+        padding-left: 15px;
+        padding-right: 15px;
+        
+        margin-left: 10px;
+        margin-right: 10px;
+        
+        transition: padding 0.5s, margin 0.5s;
+    }
+    .strech-hz:hover{
+        padding-left: 25px;  /* padding pahle 15px tha phir hover karne pe 25px kiye to usse margin ghata kitne se i.e 10px to margin left hoga 10px. Similarly, margin-right 10px */
+        padding-right: 25px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    /* difference of padding-left and padding-right with padding-left/right(on hover) is equal to margin-left/right respect. for better effect */
+</style>
+
+<button class="strech-hz">
+    One
+</button>
+<button class="strech-hz">
+    Two
+</button>
+<button class="strech-hz">
+    Three
+</button>
+
+<!-- share code: https://codepen.io/rahulrajsjs22/pen/qByVwjo -->

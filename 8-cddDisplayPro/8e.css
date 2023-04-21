@@ -1,0 +1,46 @@
+.title{
+    font-size: 28px;
+    margin-bottom: 20px;
+    margin-top: 4px;
+}
+.destination{
+    display: block;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+input{
+    width: 240px;
+    
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    
+    background-color: aliceblue;
+    border-style: solid;
+    border: none;
+}
+button{
+    border: none;
+    cursor: pointer;
+}
+.request-now-button{
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    
+    margin-right: 10px;
+    
+    background-color: black;
+    color: white;
+}
+.schedule-later-button{
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    
+    background-color: aliceblue;
+}

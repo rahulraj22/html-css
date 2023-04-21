@@ -1,0 +1,7 @@
+p{
+    width: 210px;
+    display: inline-block;
+    
+    /* ye humara button paragraph k center k along rakh dega, to check its behavior comment/uncomment it */
+    vertical-align: middle;
+}

@@ -1,0 +1,33 @@
+<!-- 3D Click -->
+<style>
+    .shadow{
+        background-color: green;
+        color: white;
+        border: none;
+        font-size: 18px;
+        /* padding in all direction */
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-left: 24px;
+        padding-right: 24px;
+        
+        cursor: pointer;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    }
+    .shadow:active{  /* active => on clicking the button */
+        margin-top: 4px;
+        margin-left: 4px;
+        box-shadow: none;  /* this is how we can remove the box shadow as well */
+    }
+</style>
+
+<button class="shadow">
+    Shadow
+</button>
+
+<!-- If we want to add a link to button -->
+<!-- 
+<button class="shadow" onclick="javascript:window.open('https://www.google.com', '_blank');">
+    Shadow
+</button> 
+-->

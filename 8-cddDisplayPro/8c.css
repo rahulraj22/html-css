@@ -1,0 +1,20 @@
+img{
+    width: 200px;
+    margin-left: 150px;
+}
+input{
+    display: block;
+    
+    /* Given width so that element will become bigger and placeholder will be visible */
+    width: 500px; 
+    
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 16px;
+    
+    border: none;
+    border-radius: 24px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+    
+    font-size: 16px;
+}

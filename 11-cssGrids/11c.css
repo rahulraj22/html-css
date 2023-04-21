@@ -1,0 +1,9 @@
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;  /* it will stack the cell to till 4, if beyond any div will be present then it will be pushed to new row in pair of 4(since we have applied 1fr 4 times */
+    column-gap: 20px;
+    row-gap: 10px;
+}
+.cell{
+    background-color: lightpink;
+}

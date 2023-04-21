@@ -1,0 +1,28 @@
+p{
+    font-family: Roboto;
+    
+    /* resetting paragraph margin and padding to zero */
+    margin: 0;
+    padding: 0;
+}
+
+.install-div{
+    width: 360px;
+    background-color: rgba(0, 0, 0, 0.76);
+    
+    /* Lets shift the text from the right-border/edge of the div */
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.install-music{
+    font-weight: bold;
+    color: white;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.feature{
+    color: rgb(160, 160, 160);
+}

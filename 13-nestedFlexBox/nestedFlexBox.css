@@ -1,0 +1,130 @@
+/* Here, we designed the header section i.e search bar, icons etc */
+.header{
+    height: 55px;
+    
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.left-section{
+    /* Here, we have first converted this div to flexbox, so that we can apply all properties of it for eg: align-items: center; */
+    display: flex;
+    align-items: center;
+}
+.hamburger-menu{
+    /* to make the icon little-bit bigger, we increase the height */
+    height: 24px;
+    
+    /* to seperate the hamburger-menu from youtube-logo */
+    margin-left: 24px;
+    margin-right: 24px;
+}
+.youtube-logo{
+    height: 20px;
+}
+.middle-section{
+    flex: 1;
+    margin-left: 70px;
+    margin-right: 35px;
+    
+    /* this will the width from 0px to 500px(max) */
+    max-width: 500px;
+    
+    /* make this div as flex so that all the icons can be aligned in same line */
+    display: flex;
+    align-items: center;
+}
+
+/* Now, icons are adjusted we ready to apply css into it */
+.search-bar{
+    flex: 1;
+    height: 37px;
+    padding-left: 10px;
+    font-size: 16px;
+    
+    /* For border */
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(194, 194, 194);
+    
+    border-radius: 2px;
+    
+    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+    
+    /* to remove the default width of the search bar */
+    width: 0;
+}
+
+/* to adjust/target the placeholder, we need a pseudo class */
+.search-bar::placeholder{
+    font-family: Roboto, Arial;
+    font-size: 16px;
+}
+
+/* for search button icon */
+.search-button{
+    height: 40px;
+    width: 66px;
+    background-color: rgb(241, 241, 241);
+    
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(194, 194, 194);
+    
+    /* normally, margin-left push the edge leftward for +ve px but when we give -ve px then it extends the edge */
+    margin-left: -1px;
+    margin-right: 10px;
+}
+
+/* target search icon */
+.search-icon{
+    height: 25px;
+    margin-top: 4px;
+}
+
+/* voice search button icon */
+.voice-search-button{
+    height: 40px;
+    width: 40px;
+    
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(243, 243, 243);
+}
+
+/* target voice search icon */
+.voice-search-icon{
+    height: 24px;
+    margin-top: 4px;
+}
+
+.right-section{
+    width: 180px;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    /* to prevent from shrinking */
+    flex-shrink: 0;
+}
+
+/* All icons in right section */
+.upload-icon{
+    height: 24px;
+}
+
+.youtube-apps-icon{
+    height: 24px;
+}
+
+.notifications-icon{
+    height: 24px;
+}
+
+.current-user-picture{
+    height: 32px;
+    border-radius: 16px;
+}
