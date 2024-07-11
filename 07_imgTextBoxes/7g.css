@@ -1,0 +1,38 @@
+.circular-img{
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    
+    object-fit: cover;  /* this decrease the size of image to targeted width/height and will not distort the image in anyway */
+    margin-right: 5px;
+    
+    vertical-align: middle;
+}
+.whats-up{
+    font-size: 18px;
+    border: none;
+    
+    width: 300px;
+    
+    vertical-align: middle;
+    /* outline: none; */  /* to remove the focus mode while writing input */
+}
+.tweet{
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    
+    border-radius: 20px;
+    
+    background-color: #378FE9; /* other option: #0A66C2 */
+    color: white;
+    border: none;
+    
+    font-size: 15px;
+    font-weight: bold;
+    
+    cursor: pointer;
+    
+    vertical-align: middle;  /* We have applied all three element with veritcal align with middle so that all the elements get aligned in one line by text */
+}

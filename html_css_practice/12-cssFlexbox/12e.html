@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12e Exercise Solution</title>
+    <style>
+        div{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        p{
+            margin: 0;
+        }
+        .container{
+            width: 300px;
+            border-width: 1px;
+            border-style: solid;
+            border-color: gray;
+            
+            border-radius: 6px;
+            padding: 1px 6px;
+            
+        }
+        .home, .notification, .messages{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2px 8px;
+            margin: 5px auto;
+        }
+
+        span{
+            padding-top: 3px;
+            padding-bottom: 3px;
+            padding-left: 10px;
+            padding-right: 10px;
+            background-color: #416ceb;
+            color: white;
+            font-size: 14px;
+            font-weight: bold;
+            
+            border-radius: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="home">
+            <p>Home</p>
+            <span>14</span>
+        </div>
+        <div class="notification">
+            <p>Notifications</p>
+            <span>3</span>
+        </div>
+        <div class="messages">
+            <p>Messages</p>
+            <span>5</span>
+        </div>
+    </div>
+</body>
+</html>

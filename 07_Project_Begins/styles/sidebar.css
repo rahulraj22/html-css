@@ -1,0 +1,43 @@
+/* CSS Positions | (see the last past in this section) | video-tut */
+.sidebar{
+    /* Once, position is fixed, the element is no longer on the page anymore and the background color is gone */
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    /* becoz, our header is of height 55px */
+    top: 55px;
+    
+    background-color: white;
+    width: 72px;
+    /* 16: finish the project */
+    z-index: 200;
+    padding-top: 5px;
+}
+
+/* 16: Finish the Project */
+.sidebar-link{
+    height: 74px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    flex-direction: column;
+    cursor: pointer;
+}
+.sidebar-link:hover{
+    background-color: rgb(235, 235, 235);
+}
+
+/* Advanced CSS Selector */
+.sidebar-link img{
+    height: 24px;
+    margin-bottom: 4px;
+}
+
+.sidebar-link div{
+    /* font-family: Roboto, Arial; */
+    font-size: 10px;
+}
+
+

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>14e Exercise Solution</title>
+    <style>
+        /* 1. first resize image */
+        .profile-picture{
+            width: 60px;
+            height: 60px;
+            border-radius: 30px;
+            object-fit: cover;
+            vertical-align: middle;
+        }
+        /* 2. increase height of body to make page scrollable */
+        body{
+            height: 3000px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .left-section{
+            /* background-color: lightpink; */
+            
+            display: flex;
+            align-items: center;
+            margin-left: 80px;
+        }
+        .name{
+            margin-left: 12px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        
+        .header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            
+            border-bottom-width: 1px;
+            border-bottom-style: solid;
+            border-bottom-color: rgb(215, 214, 214);
+        }
+        
+        .right-section{
+            /* background-color: lightblue; */
+            display: flex;
+            align-items: center;
+            margin-right: 80px;
+        }
+        .addfriend{
+            margin-right: 12px;
+            
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-right: 15px;
+            padding-left: 15px;
+            
+            background-color: #3872dc;
+            color: white;
+            font-weight: bold;
+            
+            border: none;
+            border-radius: 6px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+        .message{
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-right: 15px;
+            padding-left: 15px;
+            
+            background-color: #e4e6ea;
+            color: black;
+            font-weight: bold;
+            
+            border: none;
+            border-radius: 6px;
+            font-size: 15px;
+            cursor: pointer;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="left-section">
+            <img class="profile-picture" src="../../7-imgTextBoxes/cat.jpg" alt="cat">
+            <div class="name">
+                Oliver Cat
+            </div>
+        </div>
+        <div class="right-section">
+            <button class="addfriend">Add Friend</button>
+            <button class="message">Message</button>
+        </div>
+    </div>
+</body>
+</html>

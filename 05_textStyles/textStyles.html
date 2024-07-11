@@ -1,0 +1,85 @@
+<style>
+    p{
+        font-family: Arial, Helvetica, sans-serif;
+        /* by default, paragraph has some margin-top, margin-bottom. Therefore, here we are removing it */
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .video-title{
+        /* font-family: Arial, Helvetica, sans-serif;
+        font-size: 30px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center; */
+        
+        font-weight: bold;
+        font-size: 18px;
+        width: 300px; /* to bind the para. text in a fixed width */
+        line-height: 24px;  /* gives spacing b/w lines */
+        margin-bottom: 5px;
+    }
+    .video-stats{
+        font-size: 14px;
+        color: #606060;
+        margin-bottom: 20px;
+    }
+    .video-author{
+        color: #606060;
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    .video-description{
+        width: 300px;
+        color: #606060;
+        font-size: 14px;
+        line-height: 14px;  /* line height is used give spacing b/w lines, for clear visibility */
+        margin-bottom: 100px;
+    }
+    .apple-text{
+        margin-bottom: 50px;
+        font-size: 14px;
+        background-color: #e34140;
+        color: white;
+        text-align: center;   /* to bring the content of the text to center of the screen/paragraph(html element) */
+        
+        /* Spacing inside the element => padding */
+        padding-top: 18px;
+        padding-bottom: 18px;
+        /* text-decoration: underline; */
+    }
+    .span-example{
+        color: red;
+    }
+    .span-example:hover{
+        text-decoration: underline;
+    }
+    .shop-link:hover{
+        cursor: pointer;
+        text-decoration: underline;
+    }
+</style>
+<p class="video-title">
+    Talking Tech and AI with Google CEO Sundar Pichai!
+</p>
+
+<p class="video-stats">
+    3.4M views 	&#183; 6 months ago
+</p>
+
+<!-- &#183; and &#10003; is the html entity code used here so that html can recognize it better(instead of copy pasting the entity) -->
+
+<p class="video-author">Marques Brownlee &#10003;</p>
+<p class="video-description">
+    Talking tech and AI on the heels of Google I/O. Also a daily driver phone reveal from Google's CEO. Shoutout to Sundar!
+</p>
+
+<p class="apple-text">
+    Shop early for the best selection of holiday favourites. <span class="shop-link">Shop now 	&#62;</span> 
+</p>
+
+
+<p>
+    Lorem ipsum <span class="span-example">Hello</span> dolor sit amet consectetur <u>Hello World</u> adipisicing elit. Hello My name is <strong>Rahul Raj</strong> Facilis, Lorem Mollitia
+</p>
+
+<!-- refer for content: https://supersimple.dev/exercises/text -->

@@ -1,0 +1,12 @@
+body{
+    height: 3000px;
+}
+.gray-backgrd{
+    background-color: gray;
+    height: 200px;
+    width: 500px;
+    
+    position: fixed;  /* This will be fixed on the browser window: i.e Even after scrolling it doesn't move */
+    bottom: 15px;
+    right: 15px;
+}

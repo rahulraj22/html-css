@@ -1,0 +1,27 @@
+/* When we target all html element i.e which applies to all then such css we will put here */
+p {
+    /* font-family: Roboto, Arial; */
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+body{
+    height: 1000px;  /* given just to give space at bottom of the page */
+    font-family: Roboto, Arial;
+    margin: 0;   /* since, body by default(in browser) has 8px of margin */
+    padding-top: 80px;
+    /* this is prevent overlapping with the sidebar */
+    
+    /* 16: finish the project */
+    padding-left: 96px;
+    padding-right: 24px;
+    background-color: rgb(248, 248, 248);
+}
+
+/* 17c : Exercise Soltion */
+/* 
+@media (min-width: 1200px) {
+    body{
+        margin-left: 168px;
+    }
+} */

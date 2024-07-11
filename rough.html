@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    p{
+      margin: 0;
+      padding: 0;
+      font-size: 20px;
+    }
+    .main-container{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 60px;
+      width: 100%;
+    }
+    
+    .container p{
+      margin-bottom: 16px;
+    }
+    .cards-grid{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      row-gap: 20px;
+      column-gap: 20px;
+      width: 484px; /* 484px */
+      height: 268px;
+    }
+    .cards-grid div{
+      width: 100%;  /* 232px */
+      height: 124px;
+    }
+  </style>
+</head>
+<body>
+  <div class="main-container">
+    <div class="container">
+      <p>Previous Day</p>
+      <div class="cards-grid">
+        <div style="background-color: aqua;">No. of Attempts</div>
+        <div style="background-color: blanchedalmond;">No. of Questions</div>
+        <div style="background-color: cadetblue;">Total Time</div>
+        <div style="background-color: palevioletred;">Accuracy</div>
+      </div>
+    </div>
+    <div class="container">
+      <p>Today</p>
+      <div class="cards-grid">
+        <div style="background-color: aqua;">No. of Attempts</div>
+        <div style="background-color: blanchedalmond;">No. of Questions</div>
+        <div style="background-color: cadetblue;">Total Time</div>
+        <div style="background-color: palevioletred;">Accuracy</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Attach FavIcon: Youtube logo -->
+    <link rel="icon" href="./icons/youtube.png">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lacquer&family=Lobster&family=Montserrat:wght@300;400;500;700&family=Open+Sans:ital,wght@0,400;0,700;1,300&family=Poppins:wght@100;200;300;400;700&family=Roboto:wght@400;500;700&family=Yeon+Sung&display=swap"
+        rel="stylesheet">
+    <title>Youtube.com Clone</title>
+
+    <!-- linking all css files -->
+    <link rel="stylesheet" href="./styles/general.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/video.css">
+    <link rel="stylesheet" href="./styles/sidebar.css">
+
+</head>
+
+<body>
+    <!-- Header/NavBar -->
+    <header class="header">
+        <div class="left-section">
+            <img class="hamburger-menu" src="./icons/hamburger-menu.svg" alt="">
+            <img class="youtube-logo" src="./icons/youtube-logo.svg" alt="">
+        </div>
+        <div class="middle-section">
+            <input class="search-bar" type="text" placeholder="Search">
+            <button class="search-button">
+                <!-- 16: Tooltip and Image put inside the div -->
+                <img class="search-icon" src="./icons/search.svg" alt="">
+                <div class="tooltip">Search</div>
+            </button>
+            <button class="voice-search-button">
+                <img class="voice-search-icon" src="./icons/voice-search-icon.svg" alt="">
+                <div class="tooltip">Search with your voice</div>
+            </button>
+        </div>
+        <div class="right-section">
+            <div class="upload-icon-container">
+                <img class="upload-icon" src="./icons/upload.svg" alt="">
+                <div class="tooltip">Create</div>
+            </div>
+            <div class="youtube-app-icon-container">
+                <img class="youtube-apps-icon" src="./icons/youtube-apps.svg" alt="">
+                <div class="tooltip">YouTube apps</div>
+            </div>
+            <!-- 15: Position absolute and relative -->
+            <div class="notifications-icon-container">
+                <img class="notifications-icon" src="./icons/notifications.svg" alt="">
+                <div class="notifications-count">
+                    3
+                </div>
+                <div class="tooltip">Notifications</div>
+            </div>
+            <!-- replace src with this: ./channel-pictures/my-channel.jpeg -->
+            <img class="current-user-picture"
+                src="https://media.licdn.com/dms/image/C5603AQFtPT3m8ImGWQ/profile-displayphoto-shrink_800_800/0/1623016133089?e=1681344000&v=beta&t=ofRrp_Z1KE4Knf_nSLKbGmRguj_x62RohtEDaOX2SEE"
+                alt="">
+        </div>
+    </header>
+
+    <!-- SideBar -->
+    <nav class="sidebar">
+        <!-- 16: Finish the Porject -->
+        <div class="sidebar-link">
+            <img src="./icons/home.svg" alt="">
+            <div>Home</div>
+        </div>
+        <div class="sidebar-link">
+            <img src="./icons/explore.svg" alt="">
+            <div>Explore</div>
+        </div>
+        <div class="sidebar-link">
+            <img src="./icons/subscriptions.svg" alt="">
+            <div>Subscriptions</div>
+        </div>
+        <div class="sidebar-link">
+            <img src="./icons/originals.svg" alt="">
+            <div>Originals</div>
+        </div>
+        <div class="sidebar-link">
+            <img src="./icons/youtube-music.svg" alt="">
+            <div>YouTube Music</div>
+        </div>
+        <div class="sidebar-link">
+            <img src="./icons/library.svg" alt="">
+            <div>Library</div>
+        </div>
+    </nav>
+
+    <!-- CSS Grid: -->
+    <main>
+        <section class="video-grid">  <!-- to create a grid, we need a container!! -->
+            <div class="video-preview">
+                <!-- Vertical layout: 2 div's below -->
+                <div class="thumbnail-row">
+                    <a href="https://youtu.be/SSlZ2OD61Qw" target="_blank">
+                        <img class="thumbnail" src="./thumbnails/thumbnail-AOC.webp" alt="">
+                    </a>
+
+                    <!-- 15: Position Absolute and Relative -->
+                    <div class="video-time">
+                        10:12
+                    </div>
+                </div>
+                <div class="video-info-grid">
+                    <!-- Horizontal layout: 2 div's below -->
+                    <div class="channel-picture">
+                        <a href="https://www.youtube.com/@rahulrajsjs22" target="_blank">
+                            <img class="profile-picture" src="./channel-pictures/channel-0.jpg" alt="marquess image">
+                        </a>
+                        <!-- 16d: Profile-Picture Tooltip -->
+                        <div class="channel-tooltip">
+                            <img class="channel-tooltip-picture" src="./channel-pictures/channel-0.jpg" alt="">
+                            <div>
+                                <div class="channel-tooltip-name">
+                                    Rahul Raj
+                                </div>
+                                <div class="channel-tooltip-stats">
+                                    2 subscribers
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <a class="video-title-link" href="https://youtu.be/SSlZ2OD61Qw" target="_blank">
+                            <p class="video-title">
+                                Advent of Code 2022 | For Beginners | All you need to know
+                            </p>
+                        </a>
+                        <p class="video-author">
+                            Rahul Raj
+                        </p>
+                        <p class="video-stats">
+                            57 views &#183; 1 months ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="video-preview">
+                <!-- Vertical layout: 2 div's below -->
+                <div class="thumbnail-row">
+                    <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY" target="_blank">
+                        <img class="thumbnail" src="./thumbnails/thumbnail-1.webp" alt="">
+                    </a>
+
+                    <!-- 15: Position Absolute and Relative -->
+                    <div class="video-time">
+                        14:20
+                    </div>
+                </div>
+                <div class="video-info-grid">
+                    <!-- Horizontal layout: 2 div's below -->
+                    <div class="channel-picture">
+                        <a href="https://www.youtube.com/c/mkbhd" target="_blank">
+                            <img class="profile-picture" src="./channel-pictures/channel-1.jpeg" alt="marquess image">
+                        </a>
+                        <!-- 16d: Profile-Picture Tooltip -->
+                        <div class="channel-tooltip">
+                            <img class="channel-tooltip-picture" src="./channel-pictures/channel-1.jpeg" alt="">
+                            <div>
+                                <div class="channel-tooltip-name">
+                                    Marques Brownlee
+                                </div>
+                                <div class="channel-tooltip-stats">
+                                    15M subscribers
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <a class="video-title-link" href="https://www.youtube.com/watch?v=n2RNcPRtAiY" target="_blank">
+                            <p class="video-title">
+                                Talking Tech and AI with Google CEO Sundar Pichai!
+                            </p>
+                        </a>
+                        <p class="video-author">
+                            Marques Brownlee
+                        </p>
+                        <p class="video-stats">
+                            3.4M views &#183; 6 months ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <a href="https://www.youtube.com/watch?v=mP0RAo9SKZk" target="_blank">
+                        <img class="thumbnail" src="./thumbnails/thumbnail-2.webp" alt="">
+                    </a>
+                    <!-- 15: Position Absolute and Relative -->
+                    <div class="video-time">
+                        8:22
+                    </div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <a href="https://www.youtube.com/c/markiplier" target="_blank">
+                            <img class="profile-picture" src="./channel-pictures/channel-2.jpeg" alt="marquess image">
+                        </a>
+                        <!-- 16d: Profile-Picture Tooltip -->
+                        <div class="channel-tooltip">
+                            <img class="channel-tooltip-picture" src="./channel-pictures/channel-2.jpeg" alt="">
+                            <div>
+                                <div class="channel-tooltip-name">
+                                    Markiplier
+                                </div>
+                                <div class="channel-tooltip-stats">
+                                    30M subscribers
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <a class="video-title-link" href="https://www.youtube.com/watch?v=mP0RAo9SKZk" target="_blank">
+                            <p class="video-title">
+                                Try Not To Laugh Challenge #9
+                            </p>
+                        </a>
+                        <p class="video-author">
+                            Markiplier
+                        </p>
+                        <p class="video-stats">
+                            19M views &#183; 4 years ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <a href="https://www.youtube.com/watch?v=094y1Z2wpJg" target="_blank">
+                        <img class="thumbnail" src="./thumbnails/thumbnail-4.webp" alt="">
+                    </a>
+                    <!-- 15: Position Absolute and Relative -->
+                    <div class="video-time">
+                        14:20
+                    </div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <a href="https://www.youtube.com/c/veritasium" target="_blank">
+                            <img class="profile-picture" src="./channel-pictures/channel-4.jpeg" alt="marquess image">
+                        </a>
+                        <!-- 16d: Profile-Picture Tooltip -->
+                        <div class="channel-tooltip">
+                            <img class="channel-tooltip-picture" src="./channel-pictures/channel-4.jpeg" alt="">
+                            <div>
+                                <div class="channel-tooltip-name">
+                                    Veritasium
+                                </div>
+                                <div class="channel-tooltip-stats">
+                                    11.5M subscribers
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <a class="video-title-link" href="https://www.youtube.com/watch?v=094y1Z2wpJg" target="_blank">
+                            <p class="video-title">
+                                The Simplest Math Problem No One Can Solve - Collatz Conjecture
+                            </p>
+                        </a>
+                        <p class="video-author">
+                            Veritasium
+                        </p>
+                        <p class="video-stats">
+                            18M views &#183; 4 months ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="video-preview">
+                <!-- Vertical layout: 2 div's below -->
+                <div class="thumbnail-row">
+                    <a href="https://www.youtube.com/watch?v=86CQq3pKSUw" target="_blank">
+                        <img class="thumbnail" src="./thumbnails/thumbnail-5.webp" alt="">
+                    </a>
+                </div>
+                <div class="video-info-grid">
+                    <!-- Horizontal layout: 2 div's below -->
+                    <div class="channel-picture">
+                        <a href="https://www.youtube.com/c/CSDojo" target="_blank">
+                            <img class="profile-picture" src="./channel-pictures/channel-5.jpeg" alt="marquess image">
+                        </a>
+                        <!-- 16d: Profile-Picture Tooltip -->
+                        <div class="channel-tooltip">
+                            <img class="channel-tooltip-picture" src="./channel-pictures/channel-5.jpeg" alt="">
+                            <div>
+                                <div class="channel-tooltip-name">
+                                    CS Dojo
+                                </div>
+                                <div class="channel-tooltip-stats">
+                                    1.79M subscribers
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <a class="video-title-link" href="https://www.youtube.com/watch?v=86CQq3pKSUw" target="_blank">
+                            <p class="video-title">
+                                Kadane's Algorithm to Maximum Sum Subarray Problem
+                            </p>
+                        </a>
+                        <p class="video-author">
+                            CS Dojo
+                        </p>
+                        <p class="video-stats">
+                            519K views &#183; 5 years ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <a href="https://www.youtube.com/watch?v=yXWw0_UfSFg" target="_blank">
+                        <img class="thumbnail" src="./thumbnails/thumbnail-6.webp" alt="">
+                    </a>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <a href="https://www.youtube.com/c/MrBeast6000" target="_blank">
+                            <img class="profile-picture" src="./channel-pictures/channel-6.jpeg" alt="marquess image">
+                        </a>
+                        <!-- 16d: Profile-Picture Tooltip -->
+                        <div class="channel-tooltip">
+                            <img class="channel-tooltip-picture" src="./channel-pictures/channel-6.jpeg" alt="">
+                            <div>
+                                <div class="channel-tooltip-name">
+                                    MrBeast
+                                </div>
+                                <div class="channel-tooltip-stats">
+                                    90.6M subscribers
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <a class="video-title-link" href="https://www.youtube.com/watch?v=yXWw0_UfSFg" target="_blank">
+                            <p class="video-title">
+                                Anything You Can Fit In The Circle I'll Pay For
+                            </p>
+                        </a>
+                        <p class="video-author">
+                            MrBeast
+                        </p>
+                        <p class="video-stats">
+                            141M views &#183; 1 year ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <a href="https://www.youtube.com/watch?v=fNVa1qMbF9Y" target="_blank">
+                        <img class="thumbnail" src="./thumbnails/thumbnail-7.webp" alt="">
+                    </a>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <a href="https://www.youtube.com/@RealLifeLore" target="_blank">
+                            <img class="profile-picture" src="./channel-pictures/channel-7.jpeg" alt="marquess image">
+                        </a>
+                        <!-- 16d: Profile-Picture Tooltip -->
+                        <div class="channel-tooltip">
+                            <img class="channel-tooltip-picture" src="./channel-pictures/channel-7.jpeg" alt="">
+                            <div>
+                                <div class="channel-tooltip-name">
+                                    RealLifeLore
+                                </div>
+                                <div class="channel-tooltip-stats">
+                                    6.59M subscribers
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <a class="video-title-link" href="https://www.youtube.com/watch?v=fNVa1qMbF9Y" target="_blank">
+                            <p class="video-title">
+                                Why Planes Don't Fly Over Tibet
+                            </p>
+                        </a>
+                        <p class="video-author">
+                            RealLifeLore
+                        </p>
+                        <p class="video-stats">
+                            6.6M views &#183; 1 year ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <a href="https://www.youtube.com/watch?v=lFm4EM1juls" target="_blank">
+                        <img class="thumbnail" src="./thumbnails/thumbnail-8.webp" alt="">
+                    </a>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <a href="https://www.youtube.com/@adin" target="_blank">
+                            <img class="profile-picture" src="./channel-pictures/channel-8.jpeg" alt="marquess image">
+                        </a>
+                        <!-- 16d: Profile-Picture Tooltip -->
+                        <div class="channel-tooltip">
+                            <img class="channel-tooltip-picture" src="./channel-pictures/channel-8.jpeg" alt="">
+                            <div>
+                                <div class="channel-tooltip-name">
+                                    Tech Vision
+                                </div>
+                                <div class="channel-tooltip-stats">
+                                    801k subscribers
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <a class="video-title-link" href="https://www.youtube.com/watch?v=lFm4EM1juls" target="_blank">
+                            <p class="video-title">
+                                Inside The World's Biggest Passenger Plane
+                            </p>
+                        </a>
+                        <p class="video-author">
+                            Tech Vision
+                        </p>
+                        <p class="video-stats">
+                            3.7M views &#183; 10 months ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <a href="https://www.youtube.com/watch?v=ixmxOlcrlUc" target="_blank">
+                        <img class="thumbnail" src="./thumbnails/thumbnail-9.webp" alt="">
+                    </a>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <a href="https://www.youtube.com/@OFFICIALTHENXSTUDIOS" target="_blank">
+                            <img class="profile-picture" src="./channel-pictures/channel-9.jpeg" alt="marquess image">
+                        </a>
+                        <!-- 16d: Profile-Picture Tooltip -->
+                        <div class="channel-tooltip">
+                            <img class="channel-tooltip-picture" src="./channel-pictures/channel-9.jpeg" alt="">
+                            <div>
+                                <div class="channel-tooltip-name">
+                                    ThenX
+                                </div>
+                                <div class="channel-tooltip-stats">
+                                    7.57M subscribers
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <a class="video-title-link" href="https://www.youtube.com/watch?v=ixmxOlcrlUc" target="_blank">
+                            <p class="video-title">
+                                The SECRET to Super Human STRENGTH
+                            </p>
+                        </a>
+                        <p class="video-author">
+                            ThenX
+                        </p>
+                        <p class="video-stats">
+                            20M views &#183; 3 year ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <a href="https://www.youtube.com/watch?v=R2vXbFp5C9o" target="_blank">
+                        <img class="thumbnail" src="./thumbnails/thumbnail-10.webp" alt="">
+                    </a>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <a href="https://www.youtube.com/@InsiderBusiness" target="_blank">
+                            <img class="profile-picture" src="./channel-pictures/channel-10.jpeg" alt="marquess image">
+                        </a>
+                        <!-- 16d: Profile-Picture Tooltip -->
+                        <div class="channel-tooltip">
+                            <img class="channel-tooltip-picture" src="./channel-pictures/channel-10.jpeg" alt="">
+                            <div>
+                                <div class="channel-tooltip-name">
+                                    Business Insider
+                                </div>
+                                <div class="channel-tooltip-stats">
+                                    7.41M subscribers
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <a class="video-title-link" href="https://www.youtube.com/watch?v=R2vXbFp5C9o" target="_blank">
+                            <p class="video-title">
+                                How The World's Largest Cruise Ship Makes 30,000 Meals Every Day
+                            </p>
+                        </a>
+                        <p class="video-author">
+                            Business Insider
+                        </p>
+                        <p class="video-stats">
+                            14M views &#183; 1 year ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <a href="https://www.youtube.com/watch?v=0nZuYyXET3s" target="_blank">
+                        <img class="thumbnail" src="./thumbnails/thumbnail-11.webp" alt="">
+                    </a>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <a href="https://www.youtube.com/@Destinationtips" target="_blank">
+                            <img class="profile-picture" src="./channel-pictures/channel-11.jpeg" alt="marquess image">
+                        </a>
+                        <!-- 16d: Profile-Picture Tooltip -->
+                        <div class="channel-tooltip">
+                            <img class="channel-tooltip-picture" src="./channel-pictures/channel-11.jpeg" alt="">
+                            <div>
+                                <div class="channel-tooltip-name">
+                                    Destination Tips
+                                </div>
+                                <div class="channel-tooltip-stats">
+                                    280k subscribers
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <a class="video-title-link" href="https://www.youtube.com/watch?v=0nZuYyXET3s" target="_blank">
+                            <p class="video-title">
+                                Dubai's Crazy Underwater Train and Other Things #Only in Dubai
+                            </p>
+                        </a>
+                        <p class="video-author">
+                            Destination Tips
+                        </p>
+                        <p class="video-stats">
+                            3M views &#183; 1 year ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <a href="https://www.youtube.com/watch?v=9iMGFqMmUFs" target="_blank">
+                        <img class="thumbnail" src="./thumbnails/thumbnail-12.webp" alt="">
+                    </a>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <a href="https://www.youtube.com/@TEDEd" target="_blank">
+                            <img class="profile-picture" src="./channel-pictures/channel-12.jpeg" alt="marquess image">
+                        </a>
+                        <!-- 16d: Profile-Picture Tooltip -->
+                        <div class="channel-tooltip">
+                            <img class="channel-tooltip-picture" src="./channel-pictures/channel-12.jpeg" alt="">
+                            <div>
+                                <div class="channel-tooltip-name">
+                                    TED-Ed
+                                </div>
+                                <div class="channel-tooltip-stats">
+                                    18.2M subscribers
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <a class="video-title-link" href="https://www.youtube.com/watch?v=9iMGFqMmUFs" target="_blank">
+                            <p class="video-title">
+                                What would happen if you didn't drink water? - Mia Nacamulli
+                            </p>
+                        </a>
+                        <p class="video-author">
+                            TED-Ed
+                        </p>
+                        <p class="video-stats">
+                            12M views &#183; 5 year ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

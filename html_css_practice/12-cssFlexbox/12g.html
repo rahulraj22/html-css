@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12f Exercise Solution</title>
+    <style>
+        div{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /* 1. Firstly, we will resize the cat's image */
+        .profile-picture img{
+            width: 60px;
+            height: 60px;
+            border-radius: 30px;
+            object-fit: cover;
+            vertical-align: middle;
+        }
+        /* 2. Then, we see that image, abouts, button is in same line, so display flex and arragme using justify-conten, etc */
+        .account{
+            display: flex;
+            flex-direction: row;
+            
+            /* 5. to bring items to center */
+            align-items: center;
+            
+            /* 10. lets give margin to each div of this div */
+            margin-bottom: 26px;
+        }
+        
+        /* 6. Later I find that, this profile-about is taking whole space after profile-picture to till button, so its better to give flex: 1; */
+        .profile-about{
+            flex: 1;   /* its just like 1fr in grid(look for reference) */
+        }
+        
+        /* 7. Lets give margin right of image(since, profile-about is too close to profile-picture div) */
+        .profile-picture{
+            margin-right: 16px;
+        }
+        
+        /* 3. We saw that paragraph is taking margin at top & bottom, so we need to remove this */
+        p{
+            margin: 0;
+        }
+        
+        /* 4. we see that their is certain width to container(i.e where all the profile is shown) */
+        .container{
+            width: 360px;
+        }
+        
+        /* 8. Lets design the button */
+        .follow-btn button{
+            padding-left: 14px;
+            padding-right: 14px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            background-color: #416cebec;
+            border: none;
+            border-radius: 8px;
+            color: white;
+            font-weight: bold;
+            font-size: 15px;
+            cursor: pointer;
+        }
+        
+        /* 9. Now, lets bold the name text */
+        .name{
+            font-weight: bold;
+        }
+        .family, .popularity{
+            color: #7e7c7c;
+        }
+        .profile-about p{
+            margin-bottom: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="account">
+            <div class="profile-picture">
+                <img src="../../7-imgTextBoxes/cat.jpg" alt="cat">
+            </div>
+            <div class="profile-about">
+                <p class="name">Oliver</p>
+                <p class="family">The Cat</p>
+                <p class="popularity">Popular</p>
+            </div>
+            <div class="follow-btn">
+                <button>Follow</button>
+            </div>
+        </div>
+        <div class="account">
+            <div class="profile-picture">
+                <img src="../../9-theDivElement/cat2.jpg" alt="fat cat">
+            </div>
+            <div class="profile-about">
+                <p class="name">Mimi</p>
+                <p class="family">Sleepy Cat</p>
+                <p class="popularity">Popular</p>
+            </div>
+            <div class="follow-btn">
+                <button>Follow</button>
+            </div>
+        </div>
+        <div class="account">
+            <div class="profile-picture">
+                <img src="../../9-theDivElement/dog.jpg" alt="dog">
+            </div>
+            <div class="profile-about">
+                <p class="name">Rex</p>
+                <p class="family">Happy Bulldog</p>
+                <p class="popularity">Popular</p>
+            </div>
+            <div class="follow-btn">
+                <button>Follow</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

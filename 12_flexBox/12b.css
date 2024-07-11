@@ -1,0 +1,15 @@
+.box{
+    display: flex;
+}
+.box1{
+    background-color: lightblue;
+    width: 50px;
+}
+.box2{
+    background-color: lightpink;
+    flex: 1;  /* this is similar to 1fr in css grid */
+}
+.box3{
+    background-color: lightblue;
+    width: 75px;
+}

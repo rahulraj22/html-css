@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>13e Exercise Solution</title>
+    <style>
+        /* 1. first give the container some width */
+        .container {
+            width: 400px;
+            /* border: 2px solid black; */
+            font-family: Arial, Helvetica, sans-serif;
+            box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+            
+            padding: 10px 10px;
+            
+            border-radius: 5px;
+        }
+        /* 4. remove the default margin in paragraph */
+        p{
+            margin: 0;
+        }
+        /* 2. Lets resize the image first */
+        .profile-picture img {
+            height: 50px;
+            width: 50px;
+            border-radius: 25px;
+            object-fit: cover;
+        }
+
+        /* 3. Now, I see that image & email details in on same line */
+        .emails {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            
+            /* Create some margin b/w emails */
+            margin-bottom: 18px;
+        }
+
+        .email-subject-time {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .all-inboxes, .email-time, .email-details div:nth-child(3){
+            color: rgb(99, 99, 99);
+        }
+        
+        .all-inboxes{
+            margin-left: 8px;
+            margin-bottom: 16px;
+        }
+        .email-subject{
+            font-weight: 700;
+            font-size: 18px;
+        }
+        .email-details div:nth-child(2){
+            font-size: 15px;
+            font-weight: 700;
+        }
+        .email-details div{
+            margin-bottom: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="all-inboxes">
+            ALL INBOXES
+        </div>
+        <div class="emails">
+            <div class="profile-picture">
+                <img src="../../7-imgTextBoxes/cat.jpg" alt="cat">
+            </div>
+            <div class="email-details">
+                <div class="email-subject-time">
+                    <p class="email-subject">Chewy Promotions</p>
+                    <p class="email-time">4:58 PM</p>
+                </div>
+                <div>
+                    Biggest sales of the year!
+                </div>
+                <div>
+                    Hey there! We're writing to tell you about our...
+                </div>
+            </div>
+        </div>
+        <div class="emails">
+            <div class="profile-picture">
+                <img src="../../9-theDivElement/dog.jpg" alt="dog">
+            </div>
+            <div class="email-details">
+                <div class="email-subject-time">
+                    <p class="email-subject">Best Buy</p>
+                    <p class="email-time">12:32 PM</p>
+                </div>
+                <div>
+                    Your Best Buy eReceipt
+                </div>
+                <div>
+                    Thank you for shopping at Best Buy, here is...
+                </div>
+            </div>
+        </div>
+        <div class="emails">
+            <div class="profile-picture">
+                <img src="../../9-theDivElement/cat2.jpg" alt="cat">
+            </div>
+            <div class="email-details">
+                <div class="email-subject-time">
+                    <p class="email-subject">Netflix</p>
+                    <p class="email-time">9:00 AM</p>
+                </div>
+                <div>
+                    Here's what's coming soon to Netflix
+                </div>
+                <div>
+                    Brand new movies and shows, old favourites...
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+
+<!-- need to look at the solution!!!!! -->

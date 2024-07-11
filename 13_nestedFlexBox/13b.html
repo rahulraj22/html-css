@@ -1,0 +1,79 @@
+<!-- This is how I did -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./13b.css">
+    <title>13b Exercise Solution</title>
+</head>
+<body>
+    <div class="flexbox">
+        <div class="column1">
+            
+        </div>
+        <div class="column2">
+            <div class="row1">row1</div>
+            <div class="row2">
+                <p>row2</p>
+                <p>row2</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+<!-- Other way to do the same -->
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>13b Exercise Solution</title>
+    <style>
+        .flexbox{
+            display: flex;
+            height: 50px;
+        }
+        .row2{
+            display: flex;
+            justify-content: space-between;
+        }
+        .column1{
+            background-color: lightpink;
+            width: 100px;
+        }
+        .column2{
+            background-color: lightblue;
+            width: 200px;
+        }
+        .row2-item{
+            color: white;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="flexbox">
+        <div class="column1">
+            
+        </div>
+        <div class="column2">
+            <div class="row1">
+                row1
+            </div>
+            <div class="row2">
+                <div class="row2-item">row2</div>
+                <div class="row2-item">row2</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> -->
